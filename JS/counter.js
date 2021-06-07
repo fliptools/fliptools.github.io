@@ -21,7 +21,7 @@ var jetzt = new Date();
 function wertSetzen (Bezeichner, Wert, Verfall) {
   var jetzt = new Date();
   var Auszeit = new Date(jetzt.getTime() + Verfall);
-  document.cookie = Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() + ";";
+  document.cookie = jetzt + Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() + ";";
 }
 
 function zaehlerstand () {
