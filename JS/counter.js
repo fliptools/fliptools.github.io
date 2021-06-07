@@ -32,7 +32,7 @@ function zaehlerstand () {
     Zaehler = parseInt(Anzahl) || 0;
   }
   Zaehler = Zaehler + 1;
-  wertSetzen("fliptools-Besuche", Zaehler, jetzt, get.time, Verfallszeit);
+  wertSetzen("Besuche=", Zaehler, get.time(), Verfallszeit);
   return (Zaehler);
 }
 
