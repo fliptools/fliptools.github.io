@@ -19,7 +19,7 @@ function wertHolen () {
 
 function wertSetzen (Bezeichner, Wert, Verfall) {
   var jetzt = new Date();
-var now = get.time();
+var now = Date.now();
   var Auszeit = new Date(jetzt.getTime() + Verfall);
   document.cookie = now + Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() + ";";
  }
