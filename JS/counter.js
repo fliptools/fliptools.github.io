@@ -9,6 +9,7 @@ function wertHolen () {
   if (document.cookie) {
     var Wertstart = document.cookie.indexOf("=") + 1;
     var Wertende = document.cookie.indexOf(";");
+var jetzt = new Date();
     if (Wertende == -1) {
       Wertende = document.cookie.length;
     }
