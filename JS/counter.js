@@ -31,7 +31,7 @@ function zaehlerstand () {
     Zaehler = parseInt(Anzahl) || 0;
   }
   Zaehler = Zaehler + 1;
-  wertSetzen("Besuche", Zaehler, jetzt, Verfallszeit);
+  wertSetzen("Global Counter", Zaehler, jetzt, Verfallszeit);
   return (Zaehler);
 }
 
