@@ -9,7 +9,6 @@ function wertHolen () {
   if (document.cookie) {
     var Wertstart = document.cookie.indexOf("=") + 1;
     var Wertende = document.cookie.indexOf(";");
-var jetzt = new Date();
     if (Wertende == -1) {
       Wertende = document.cookie.length;
     }
@@ -20,8 +19,9 @@ var jetzt = new Date();
 
 function wertSetzen (Bezeichner, Wert, Verfall) {
   var jetzt = new Date();
+var now = get.time();
   var Auszeit = new Date(jetzt.getTime() + Verfall);
-  document.cookie = jetzt + Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() + ";";
+  document.cookie = now + Bezeichner + "=" + Wert + "; expires=" + Auszeit.toGMTString() + ";";
  }
 
 function zaehlerstand () {
