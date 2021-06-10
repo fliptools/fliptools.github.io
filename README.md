@@ -1,2 +1,0 @@
-# fliptools.github.io
-FlipTools
